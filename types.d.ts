@@ -8,4 +8,6 @@ export type Repo = {
   forks_count: number;
   topics?: string[];
   pushed_at: string;
+  homepage?: string;
+  video_url?: string;
 };
