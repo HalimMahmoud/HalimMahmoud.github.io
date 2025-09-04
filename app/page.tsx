@@ -6,11 +6,10 @@ import type { Repo } from "@/types";
 
 async function fetchRepos(): Promise<Repo[]> {
   const res = await fetch(
-    `https://api.github.com/users/HalimMahmoud/repos
-`,
-    {
-      cache: "no-store",
-    }
+    `https://api.github.com/users/HalimMahmoud/repos`
+    // {
+    //   cache: "no-store",
+    // }
   );
   const data = await res.json();
 
