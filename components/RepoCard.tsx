@@ -4,6 +4,9 @@ import type { Repo } from "@/types";
 export default function RepoCard({ repo }: { repo: Repo }) {
   const updated = new Date(repo.pushed_at).toLocaleDateString();
 
+  const badgeClassName = repo?.homepage?.endsWith(".gif")
+    ? "badge bg-red-100 hover:bg-red-200 text-red-700"
+    : "badge bg-blue-100 hover:bg-blue-200 text-blue-700";
   return (
     <div className="card p-5 h-full flex flex-col">
       {/* Header with name + badges */}
@@ -19,18 +22,9 @@ export default function RepoCard({ repo }: { repo: Repo }) {
             <Link
               href={repo.homepage}
               target="_blank"
-              className="badge bg-blue-100 hover:bg-blue-200 text-blue-700"
+              className={badgeClassName}
             >
-              Preview
-            </Link>
-          )}
-          {repo.video_url && (
-            <Link
-              href={repo.video_url}
-              target="_blank"
-              className="badge bg-red-100 hover:bg-red-200 text-red-700"
-            >
-              Video
+              {repo.homepage.endsWith(".gif") ? "Demo" : "Live"}
             </Link>
           )}
         </div>

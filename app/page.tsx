@@ -5,12 +5,9 @@ import RepoCard from "@/components/RepoCard";
 import type { Repo } from "@/types";
 
 async function fetchRepos(): Promise<Repo[]> {
-  const res = await fetch(
-    `https://api.github.com/users/HalimMahmoud/repos`
-    // {
-    //   cache: "no-store",
-    // }
-  );
+  const res = await fetch(`https://api.github.com/users/HalimMahmoud/repos`, {
+    cache: "no-store",
+  });
   const data = await res.json();
 
   return Array.isArray(data) ? data : [];
@@ -57,7 +54,7 @@ export default async function Page() {
           </div>
         )}
       </Section>
-
+      {/* 
       <Section id="repos" title="More Repositories">
         {others.length === 0 ? (
           <p className="text-slate-600">No other repositories yet.</p>
@@ -68,10 +65,22 @@ export default async function Page() {
             ))}
           </div>
         )}
-      </Section>
+      </Section> */}
 
       <Section id="experience" title="Experience">
         <ul className="space-y-4">
+          <li className="card p-5">
+            <h3 className="font-semibold">
+              Upskilling — Frontend React Developer Trainee (Job Simulation
+              Bootcamp)
+            </h3>
+            <p className="text-sm text-slate-600">Feb 2025 – Jun 2025</p>
+            <p className="mt-2 text-sm">
+              Collaborating in teams to build frontend projects using
+              GitHub/Jira/Trello, applying agile practices, implementing
+              authentication workflows and integrating third-party services.
+            </p>
+          </li>
           <li className="card p-5">
             <h3 className="font-semibold">
               National Bank of Egypt (NBE) — Senior Bank Teller (Level A)
@@ -114,12 +123,12 @@ export default async function Page() {
               Router.
             </p>
             <p className="text-sm mt-1">
-              UI: Tailwind, Material UI, Shadcn, Bootstrap, Semantic UI.
+              Tailwind, Material UI, Shadcn, Bootstrap, Semantic UI.
             </p>
             <p className="text-sm mt-1">
-              State: Context API, Redux Toolkit, Zustand, Valtio.
+              Context API, Redux Toolkit, Zustand, Valtio.
             </p>
-            <p className="text-sm mt-1">Forms: React Hook Form, Formik.</p>
+            <p className="text-sm mt-1">React Hook Form, Formik.</p>
           </div>
           <div className="card p-5">
             <h3 className="font-semibold">Backend & Tools</h3>
@@ -127,14 +136,11 @@ export default async function Page() {
               Node.js (Express, Next.js APIs), Firebase, Flask, Laravel.
             </p>
             <p className="text-sm mt-1">
-              DB: MongoDB/Firestore, PostgreSQL, MySQL.
+              MongoDB, Firestore, PostgreSQL, MySQL.
             </p>
+            <p className="text-sm mt-1">Vite, Webpack. Git</p>
             <p className="text-sm mt-1">
-              Build: Vite, Webpack. Deployment: Netlify, Firebase Hosting,
-              GitHub Pages.
-            </p>
-            <p className="text-sm mt-1">
-              Version Control: Git. Design: Photoshop, Illustrator (basic).
+              Netlify, Firebase Hosting, GitHub Pages.
             </p>
           </div>
         </div>
@@ -144,7 +150,8 @@ export default async function Page() {
         <ul className="space-y-4">
           <li className="card p-5">
             <h3 className="font-semibold">
-              B.Com (Business Administration) — Cairo University
+              Bachelor's Degree from Faculty of Commerce English Section
+              (Business Administration) — Cairo University
             </h3>
             <p className="text-sm text-slate-600">2019</p>
           </li>

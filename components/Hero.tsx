@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -13,13 +13,36 @@ export default function Hero() {
         Abdel‑Halim Mahmoud Nasr
       </motion.h1>
       <p className="mt-4 text-lg md:text-xl text-slate-600">
-        Front‑End Developer — React & Node.js. I build modern UIs and smooth user experiences.
+        Front‑End Developer — React & Node.js. I build modern UIs and smooth
+        user experiences.
       </p>
       <div className="mt-6 flex flex-wrap items-center gap-3">
-        <a className="btn" href="mailto:halimmahmoud50@gmail.com">Email</a>
-        <a className="btn" href="https://github.com/HalimMahmoud" target="_blank" rel="noreferrer">GitHub</a>
-        <a className="btn" href="https://www.linkedin.com/in/abdelhalimmahmoudnasr" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a className="btn" href="/Halim-Resume.pdf" download>Resume</a>
+        <a className="btn" href="mailto:halimmahmoud50@gmail.com">
+          Email
+        </a>
+        <a
+          className="btn"
+          href="https://github.com/HalimMahmoud"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+        <a
+          className="btn"
+          href="https://www.linkedin.com/in/abdelhalimmahmoudnasr"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
+          className="btn"
+          href="/Abdelhalim Mahmoud@Frontend Developer.pdf"
+          download
+        >
+          Resume
+        </a>
       </div>
     </section>
   );
