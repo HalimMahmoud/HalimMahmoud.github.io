@@ -5,9 +5,13 @@ import RepoCard from "@/components/RepoCard";
 import type { Repo } from "@/types";
 
 async function fetchRepos(): Promise<Repo[]> {
-  const res = await fetch(`https://api.github.com/users/HalimMahmoud/repos`, {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `https://api.github.com/users/HalimMahmoud/repos`
+
+    //   , {
+    //   cache: "no-store",
+    // }
+  );
   const data = await res.json();
 
   return Array.isArray(data) ? data : [];
