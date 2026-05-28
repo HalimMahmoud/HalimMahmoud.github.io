@@ -7,8 +7,7 @@ const nextConfig = {
       { protocol: "https", hostname: "raw.githubusercontent.com" },
     ],
   },
-  basePath: "", // 👈 for personal site
-  assetPrefix: "./", // 👈 for personal site
+  basePath: "",
   trailingSlash: true,
 };
 module.exports = nextConfig;

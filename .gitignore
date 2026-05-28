@@ -40,3 +40,13 @@ dist-ssr
 
 package-lock.json
 yarn.lock
+
+# AI / Agentic coding tool configurations & local data
+.agent/
+.agents/
+.claude/
+.continue/
+skills-lock.json
+
+# Local design systems notes and resources
+design-system/
