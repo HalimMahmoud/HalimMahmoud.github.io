@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  <!-- Background with brand gradient -->
+  <rect width="512" height="512" rx="128" fill="url(#brand-grad)" />
+  <!-- Terminal Prompt Symbol in Dark Slate -->
+  <polyline points="160,370 280,256 160,142" fill="none" stroke="#0f172a" stroke-width="48" stroke-linecap="round" stroke-linejoin="round" />
+  <line x1="300" y1="380" x2="410" y2="380" stroke="#0f172a" stroke-width="48" stroke-linecap="round" />
+</svg>
