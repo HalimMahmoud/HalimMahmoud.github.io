@@ -37,7 +37,7 @@ export default function Contact() {
             
             <div 
               onClick={() => copyToClipboard("halimmahmoud50@gmail.com", "email")}
-              className="flex items-center justify-between p-3 bg-secondary rounded-xl border border-primary hover:border-brand-cyan/40 transition-colors cursor-pointer group/item"
+              className="flex items-center justify-between p-3 bg-theme-bg-secondary/40 backdrop-blur-sm rounded-xl border border-primary hover:border-brand-cyan/40 transition-colors cursor-pointer group/item"
               title="Click to copy email"
             >
               <div className="flex items-center gap-2 sm:gap-3 min-w-0">
@@ -61,7 +61,7 @@ export default function Contact() {
 
             <div 
               onClick={() => copyToClipboard("+201121202539", "phone")}
-              className="flex items-center justify-between p-3 bg-secondary rounded-xl border border-primary hover:border-brand-purple/40 transition-colors cursor-pointer group/item"
+              className="flex items-center justify-between p-3 bg-theme-bg-secondary/40 backdrop-blur-sm rounded-xl border border-primary hover:border-brand-purple/40 transition-colors cursor-pointer group/item"
               title="Click to copy phone"
             >
               <div className="flex items-center gap-2 sm:gap-3 min-w-0">
@@ -83,7 +83,7 @@ export default function Contact() {
               </button>
             </div>
 
-            <div className="flex items-center gap-3 p-3 bg-secondary rounded-xl border border-primary sm:col-span-2">
+            <div className="flex items-center gap-3 p-3 bg-theme-bg-secondary/40 backdrop-blur-sm rounded-xl border border-primary sm:col-span-2">
               <div className="p-2 rounded-lg bg-brand-pink/10 text-brand-pink border border-brand-pink/20">
                 <MapPin className="w-4 h-4" />
               </div>

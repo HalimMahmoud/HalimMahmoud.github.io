@@ -70,7 +70,7 @@ export default function RepoCard({ repo }: { repo: Repo }) {
       <div className="space-y-4">
         {/* Header with name + live/demo badge */}
         <div className="flex items-start justify-between gap-2">
-          <div className="p-2 rounded-lg bg-theme-bg-secondary border border-theme-border text-brand-cyan group-hover:text-brand-purple group-hover:border-brand-purple/40 transition-colors flex items-center justify-center min-w-8 min-h-8">
+          <div className="p-2 rounded-lg bg-theme-bg-secondary/40 border border-theme-border text-brand-cyan group-hover:text-brand-purple group-hover:border-brand-purple/40 transition-colors flex items-center justify-center min-w-8 min-h-8">
             {getRepoIcon(repo.name, repo.description)}
           </div>
 

@@ -106,7 +106,7 @@ export default function Experience() {
                     </h3>
                     <p className={`${exp.companyClass} text-xs font-semibold mt-1`}>{exp.companyOrProgram}</p>
                   </div>
-                  <span className="text-[9px] sm:text-[10px] px-2 sm:px-3 py-1 rounded-full border border-primary bg-secondary text-secondary font-mono w-fit whitespace-nowrap">
+                  <span className="text-[9px] sm:text-[10px] px-2 sm:px-3 py-1 rounded-full border border-primary bg-theme-bg-secondary/40 text-secondary font-mono w-fit whitespace-nowrap">
                     {exp.duration}
                   </span>
                 </div>
