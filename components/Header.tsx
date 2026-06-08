@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { Menu, X, Terminal, Sun, Moon, Code, Cpu, Briefcase, GraduationCap, Mail } from "lucide-react";
 
 const navItems = [
@@ -17,24 +17,22 @@ export default function Header() {
   const [mounted, setMounted]             = useState(false);
   const [theme, setTheme]                 = useState("dark");
 
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setIsScrolled(latest > 20);
+    if (latest > 60) setMobileMenuOpen(false);
+  });
+
   useEffect(() => {
     // Initial scroll state
     setIsScrolled(window.scrollY > 20);
-
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-      // Close menu when user scrolls away
-      if (window.scrollY > 60) setMobileMenuOpen(false);
-    };
-    window.addEventListener("scroll", handleScroll);
 
     // Theme init
     setMounted(true);
     const savedTheme = localStorage.getItem("theme") || "light";
     setTheme(savedTheme);
     document.documentElement.classList.toggle("dark", savedTheme === "dark");
-
-    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Prevent body scroll when drawer is open

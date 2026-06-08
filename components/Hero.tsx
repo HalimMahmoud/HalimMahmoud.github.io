@@ -20,7 +20,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative pt-28 pb-16 sm:pt-32 sm:pb-20 md:pt-40 md:pb-28 overflow-hidden tech-grid-bg">
+    <section className="relative pt-20 pb-16 md:pt-24 md:pb-20 overflow-hidden tech-grid-bg">
       {/* Soft visual background glows - floating organically */}
       <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-brand-cyan/4 dark:bg-brand-cyan/6 blur-[120px] pointer-events-none transition-all duration-300 animate-float-1" />
       <div className="absolute top-1/3 right-1/4 translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-brand-purple/4 dark:bg-brand-purple/6 blur-[140px] pointer-events-none transition-all duration-300 animate-float-2" />
@@ -51,9 +51,7 @@ export default function Hero() {
               variants={itemVariants}
               className="text-[1.75rem] xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold font-display tracking-tight text-primary leading-[1.1]"
             >
-              Building Modern, <br />
-              <span className="gradient-text">Full-Stack</span> <br />
-              Web Applications
+              Building Modern <span className="gradient-text">Full-Stack</span> Applications
             </motion.h1>
 
             {/* Paragraph Bio */}
@@ -61,8 +59,7 @@ export default function Hero() {
               variants={itemVariants}
               className="text-base sm:text-lg text-secondary max-w-xl mx-auto lg:mx-0 leading-relaxed font-sans"
             >
-              Hi, I'm <strong className="text-primary font-semibold">Abdel-Halim Mahmoud Nasr (Halim)</strong>. 
-              A dedicated Full-Stack Developer specializing in React, Next.js, Node.js, and TypeScript. I design high-performance user interfaces and build robust, type-safe backend APIs to deliver seamless end-to-end web applications.
+              Hi, I'm Halim. I engineer high-performance React frontends and robust, type-safe Node.js backend APIs.
             </motion.p>
 
             {/* Action Buttons */}
@@ -78,20 +75,13 @@ export default function Hero() {
                 <FileText className="w-3.5 h-3.5 text-secondary" />
                 <span>Download Resume</span>
               </a>
-            </motion.div>
-
-            {/* Social Badges */}
-            <motion.div 
-              variants={itemVariants}
-              className="flex items-center justify-center lg:justify-start gap-4 text-secondary pt-2"
-            >
-              <span className="text-xs uppercase tracking-wider font-bold">Find me on</span>
-              <div className="flex gap-2">
+              <div className="flex gap-2 ml-1">
                 <a 
                   href="https://github.com/HalimMahmoud" 
                   target="_blank" 
                   rel="noreferrer"
-                  className="p-2 rounded-lg border border-theme-border bg-theme-bg-secondary/40 hover:text-primary hover:border-brand-cyan/40 transition-colors"
+                  className="p-2 rounded-xl border border-theme-border bg-theme-bg-secondary/40 hover:text-primary hover:border-brand-cyan/40 transition-colors"
+                  aria-label="GitHub"
                 >
                   <Github className="w-4 h-4" />
                 </a>
@@ -99,7 +89,8 @@ export default function Hero() {
                   href="https://www.linkedin.com/in/abdelhalimmahmoudnasr" 
                   target="_blank" 
                   rel="noreferrer"
-                  className="p-2 rounded-lg border border-theme-border bg-theme-bg-secondary/40 hover:text-primary hover:border-brand-cyan/40 transition-colors"
+                  className="p-2 rounded-xl border border-theme-border bg-theme-bg-secondary/40 hover:text-primary hover:border-brand-cyan/40 transition-colors"
+                  aria-label="LinkedIn"
                 >
                   <Linkedin className="w-4 h-4" />
                 </a>

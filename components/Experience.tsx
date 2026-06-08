@@ -25,7 +25,7 @@ const experienceList: ExperienceItem[] = [
     titleHoverClass: "group-hover:text-brand-cyan",
     companyOrProgram: "Upskilling Program",
     companyClass: "text-brand-purple",
-    duration: "Feb 2025 – Jun 2025",
+    duration: "Feb 2025 - Jun 2025",
     description: (
       <>
         Collaborated in cross-functional agile Scrum teams using <strong>GitHub</strong>, <strong>Jira</strong>, and <strong>Trello</strong> to build scalable frontend web projects. Applied agile workflows, engineered secure client-side authentication mechanisms, and integrated modern third-party APIs and services.
@@ -41,7 +41,7 @@ const experienceList: ExperienceItem[] = [
     titleHoverClass: "group-hover:text-brand-purple",
     companyOrProgram: "National Bank of Egypt (NBE)",
     companyClass: "text-brand-cyan",
-    duration: "Nov 2020 – Present",
+    duration: "Nov 2020 - Present",
     description: (
       <>
         Orchestrate high-volume cash operations, manage ledger administration, coordinate vault security, and execute precise ATM feeding and daily settlements. Handled complex client transactions under rigorous regulatory risk compliance.
@@ -57,7 +57,7 @@ const experienceList: ExperienceItem[] = [
     titleHoverClass: "group-hover:text-brand-pink",
     companyOrProgram: "elmenus (FoodTech Startup)",
     companyClass: "text-brand-purple",
-    duration: "Jul 2019 – Oct 2020",
+    duration: "Jul 2019 - Oct 2020",
     description: (
       <>
         Delivered an optimized customer ordering and delivery journey at a leading food tech startup. Triaged real-time platform inquiries, resolved restaurant partner technical bottlenecks, and synchronized delivery logs. Managed high-volume ticket resolution using <strong>HappyFox</strong> and facilitated real-time customer/partner chat operations via <strong>Slack</strong> and <strong>Intercom</strong>.
@@ -73,7 +73,7 @@ const experienceList: ExperienceItem[] = [
     titleHoverClass: "group-hover:text-brand-cyan",
     companyOrProgram: "Abu Dhabi Islamic Bank (ADIB)",
     companyClass: "text-brand-purple",
-    duration: "Jul 2018 – Aug 2018",
+    duration: "Jul 2018 - Aug 2018",
     description: (
       <>
         Guided retail banking clients regarding standard financial products and bank accounts. Handled service requests and resolved customer complaints efficiently in compliance with banking standards, strengthening client relationships and analytical problem-solving.

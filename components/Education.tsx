@@ -16,7 +16,7 @@ export default function Education() {
             </div>
             <div className="space-y-2">
               <span className="text-[9px] uppercase tracking-wider font-bold text-brand-cyan">Bachelor's Degree</span>
-              <h3 className="font-bold text-sm text-primary">Cairo University — English Section</h3>
+              <h3 className="font-bold text-sm text-primary">Cairo University, English Section</h3>
               <p className="text-xs text-secondary">Business Administration Major (Class of 2019)</p>
             </div>
           </div>
@@ -30,7 +30,7 @@ export default function Education() {
             </div>
             <div className="space-y-2">
               <span className="text-[9px] uppercase tracking-wider font-bold text-brand-purple">Developer Nanodegree</span>
-              <h3 className="font-bold text-sm text-primary">Advanced Web Development — Udacity</h3>
+              <h3 className="font-bold text-sm text-primary">Advanced Web Development | Udacity</h3>
               <p className="text-xs text-secondary">Intensive front-to-back systems and API design certifications.</p>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Education() {
             </div>
             <div className="space-y-2">
               <span className="text-[9px] uppercase tracking-wider font-bold text-brand-pink">Bootcamp Graduate</span>
-              <h3 className="font-bold text-sm text-primary">React Job Simulation Bootcamp — Upskilling</h3>
+              <h3 className="font-bold text-sm text-primary">React Job Simulation Bootcamp | Upskilling</h3>
               <p className="text-xs text-secondary">Team-focused Agile engineering, complex git flow, and automated integrations.</p>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function Education() {
             </div>
             <div className="space-y-2">
               <span className="text-[9px] uppercase tracking-wider font-bold text-brand-cyan">Ongoing Training</span>
-              <h3 className="font-bold text-sm text-primary">Advanced DevOps — Kimit Academy</h3>
+              <h3 className="font-bold text-sm text-primary">Advanced DevOps | Kimit Academy</h3>
               <p className="text-xs text-secondary">Learning multi-stage Dockerfiles and containerized builds (Work in progress).</p>
             </div>
           </div>

@@ -32,7 +32,7 @@ async function fetchRepos(): Promise<Repo[]> {
   }
 }
 
-// Created once at module level — stable reference, no re-fetch on re-render
+// Created once at module level - stable reference, no re-fetch on re-render
 const reposPromise = fetchRepos();
 
 // ── Inner component that suspends until the promise resolves ──
