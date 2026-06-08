@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Abdel-Halim Mahmoud Nasr | Full-Stack Developer (React & Next.js)",
   description: "Full-Stack Developer specializing in React, Next.js, and Node.js. I build secure, high-performance web systems and interactive digital interfaces.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.svg",
   }
 };
 

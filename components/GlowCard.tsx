@@ -67,7 +67,7 @@ export default function GlowCard({
     >
       {/* Dynamic Glow Layer */}
       <motion.div
-        className="pointer-events-none absolute -inset-px rounded-xl opacity-0 group-hover:opacity-[0.18] dark:group-hover:opacity-[0.26] transition-opacity duration-300 z-0"
+        className="pointer-events-none absolute -inset-px rounded-xl opacity-0 group-hover:opacity-[0.06] dark:group-hover:opacity-[0.09] transition-opacity duration-300 z-0"
         style={{
           background: backgroundGradient,
         }}
