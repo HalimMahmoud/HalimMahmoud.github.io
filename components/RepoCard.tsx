@@ -62,14 +62,14 @@ export default function RepoCard({ repo }: { repo: Repo }) {
   return (
     <GlowCard 
       glowColor={getGlowColorForRepo(repo.name)}
-      className="p-6 h-full hover:-translate-y-1 hover:shadow-xl group"
+      className="p-4 sm:p-6 h-full hover:-translate-y-1 hover:shadow-xl group"
     >
       {/* Decorative top grid overlay - highly subtle */}
       <div className="absolute inset-0 bg-theme-bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none duration-300 tech-grid-bg rounded-xl" />
 
       <div className="space-y-4">
         {/* Header with name + live/demo badge */}
-        <div className="flex items-start justify-between gap-4">
+        <div className="flex items-start justify-between gap-2">
           <div className="p-2 rounded-lg bg-theme-bg-secondary border border-theme-border text-brand-cyan group-hover:text-brand-purple group-hover:border-brand-purple/40 transition-colors flex items-center justify-center min-w-8 min-h-8">
             {getRepoIcon(repo.name, repo.description)}
           </div>

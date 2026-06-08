@@ -20,6 +20,9 @@
   
   /* Force class-based dark mode selector in Tailwind CSS v4 */
   --variant-dark: class;
+
+  /* Custom xs breakpoint for 320px → 480px range */
+  --breakpoint-xs: 30rem; /* 480px */
 }
 
 @layer base {
@@ -85,6 +88,7 @@
     background-color: var(--bg-color);
     color: var(--text-primary);
     min-height: 100vh;
+    min-width: 320px;
     overflow-x: hidden;
     /* Soft transitions on theme toggles */
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -131,7 +135,7 @@
 /* Premium Dynamic Classes */
 
 .container {
-  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  @apply max-w-6xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8;
 }
 
 /* Theme-Responsive Typography & Background Utilities */

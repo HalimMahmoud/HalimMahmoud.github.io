@@ -26,7 +26,7 @@ export default function Contact() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
         {/* Card left: Details */}
-        <GlowCard glowColor="cyan" className="lg:col-span-2 p-6 hover:-translate-y-0.5 hover:shadow-lg">
+        <GlowCard glowColor="cyan" className="lg:col-span-2 p-4 sm:p-6 hover:-translate-y-0.5 hover:shadow-lg">
           <div className="space-y-6">
             <h3 className="text-lg font-bold text-primary font-display">Let's collaborate!</h3>
             <p className="text-xs text-secondary leading-relaxed">
@@ -40,13 +40,13 @@ export default function Contact() {
               className="flex items-center justify-between p-3 bg-secondary rounded-xl border border-primary hover:border-brand-cyan/40 transition-colors cursor-pointer group/item"
               title="Click to copy email"
             >
-              <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/20">
+              <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+                <div className="p-1.5 sm:p-2 rounded-lg bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/20 shrink-0">
                   <Mail className="w-4 h-4" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <h4 className="text-[10px] font-bold text-secondary uppercase tracking-wider">Email Address</h4>
-                  <span className="text-xs font-semibold text-primary mt-0.5 block hover:underline">
+                  <span className="text-[11px] sm:text-xs font-semibold text-primary mt-0.5 block truncate">
                     halimmahmoud50@gmail.com
                   </span>
                 </div>
@@ -64,13 +64,13 @@ export default function Contact() {
               className="flex items-center justify-between p-3 bg-secondary rounded-xl border border-primary hover:border-brand-purple/40 transition-colors cursor-pointer group/item"
               title="Click to copy phone"
             >
-              <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-brand-purple/10 text-brand-purple border border-brand-purple/20">
+              <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+                <div className="p-1.5 sm:p-2 rounded-lg bg-brand-purple/10 text-brand-purple border border-brand-purple/20 shrink-0">
                   <Phone className="w-4 h-4" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <h4 className="text-[10px] font-bold text-secondary uppercase tracking-wider">Phone Number</h4>
-                  <span className="text-xs font-semibold text-primary mt-0.5 block hover:underline">
+                  <span className="text-[11px] sm:text-xs font-semibold text-primary mt-0.5 block truncate">
                     +20 112 120 2539
                   </span>
                 </div>

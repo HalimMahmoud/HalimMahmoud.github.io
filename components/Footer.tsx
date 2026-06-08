@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="border-t border-primary bg-secondary relative z-10 animate-fade-in">
-      <div className="container py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div className="container py-6 sm:py-8 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-[10px] sm:text-xs text-slate-500 text-center">
         <div>
           © {new Date().getFullYear()} Abdel-Halim Mahmoud Nasr. All rights reserved.
         </div>
